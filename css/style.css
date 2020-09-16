@@ -28,8 +28,6 @@ header {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	text-align: center;
-	color: white;
 }
 
 div.head {
@@ -40,14 +38,28 @@ div.head {
 	background-position: 0% 78%; /* 30% */
 }
 
-img.banner {
-	position: fixed;
-	left: 0;
+div.banner {
+	/* height: 10%; doesn't do anything for some reason */
+}
+
+.banner img {
+	position: absolute;
 	z-index: -2;
-	height: auto;
-	min-height: 100%;
+	/* min-height: 100%;
 	max-width: 100%;
 	top: -40%;
+	left: 0; */
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+ 	right: 0;
+ 	bottom: 0;
+ 	width: 100%;
+ 	margin: 0;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 header:before {
@@ -62,14 +74,28 @@ header:before {
 	background: rgba(0, 0, 0, 0.5);
 }
 
-h1.title {
+.title h1 {
 	font-size: 5.75em;
 	margin-top: -0.2em;
 }
 
-header h3 {
-	margin-top: 15%;
+.title h3 {
 	font-size: 2.3em;
+}
+
+.title p {
+	font-size: 2em;
+}
+
+.title {
+	z-index: 2;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 /* nav */ 
@@ -111,7 +137,7 @@ nav li a:hover {
 /* main */
 
 section {
-	width: 1519px;
+	width: 100%;
 	padding-top: 3em;
 	padding-bottom: 1em;
 }
@@ -176,10 +202,11 @@ img.pfp {
 .img-crop {
 	border-radius: 50%;
 	width: 30%;
+	min-width: 280px;
 	overflow: hidden;
 	position: relative;
 	float: right;
-	margin-left: 15px;
+	margin-left: 40px;
 }
 
 #about a {
@@ -219,11 +246,14 @@ section#portfolio {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 2em;
+	grid-gap: 40px 20px;
 	grid-auto-flow: row;
 	text-align: center;
 	margin-top: 2em;
 	margin-bottom: 2em;
+	/* justify-content: center; /* space between doesn't work?! */
+	justify-items: center;
+	width: 100%;
 }
 
 .item {
@@ -234,6 +264,8 @@ section#portfolio {
 	color: #222;
 	padding: 20px;
 	transition: all 200ms ease-in-out;
+	min-width: 288px;
+	max-width: 320px;
 }
 
 .item a {
@@ -259,6 +291,15 @@ section#portfolio {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin-bottom: 10px;
 	width: 100%;
+	min-width: 240px;
+}
+
+.item aside {
+	font-size: 0.25em;
+	position: relative;
+	float: right;
+	top: 11%;
+	color: grey;
 }
 
 /* footer - contact */
@@ -287,14 +328,14 @@ footer a:hover {
 	color: #ff974d;
 }
 
-footer div.email {
+/* footer div.email {
 	font-size: 1em;
 }
 
 footer .fa-envelope {
 	padding-right: 0.25em;
 	font-size: 0.85em;
-}
+} getting rid of div email bc it looks bad */
 
 .socials .fas, .socials .fab {
 	margin: 1em;
@@ -303,7 +344,8 @@ footer .fa-envelope {
 }
 
 .socials {
-	margin: 1.5em;
+	margin-bottom: 1.25em;
+	margin-top: 1em;
 }
 
 .copyright {
@@ -312,3 +354,66 @@ footer .fa-envelope {
 	/* mayb uppercase and bold? nah */
 }
 
+
+
+/* phone time */
+
+@media only screen and (max-width: 1518px) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 40px;
+	}
+	.item aside {
+		top: 5%;
+	}
+}
+
+@media only screen and (max-width: 1080px) {
+	.container {
+		width: 70%;
+	}
+}
+
+
+@media only screen and (max-width: 900px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+	.banner img {
+		height: 100%;
+		width: auto;
+	}
+	footer {
+		padding: 3em 0;
+	}
+
+	.img-crop {
+		position: static;
+		float: none;
+		margin: auto;
+		margin-bottom: 2em;
+		min-width: 200px;
+		max-width: 280px;
+		width: 50%;
+	}
+
+	#about p {
+		text-align: center;
+	}
+
+	.heading {
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 540px) {
+	.container {
+		width: 80%;
+	}
+
+	img.pfp {
+
+	}
+
+}
