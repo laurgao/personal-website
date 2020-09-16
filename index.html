@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome/fontawesome-free-5.14.0-web/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins/jquery.animatedheadline.css">
+
 </head>
 <body>
 	
@@ -18,10 +20,27 @@
 			</ul>
 		</nav>
 
-		<header>
-			<img src="img/pc1.jpg" class="banner">
+		<div class="title">
 			<h3>This is</h3>
-			<h1 class="title">Laura Gao</h1>
+			<h1>Laura Gao</h1>
+			<p class="cd-headline rotate-1">
+				<span class="cd-words-wrapper">
+					<b class="is-visible"></b>
+					<b>Video Creator</b>
+					<b>Speedcuber</b>
+					<b>Math Nerd</b>
+					<b>Full Stack Web Dev</b>
+					<b>Innovator</b>
+				</span>
+			</p>
+		</div>
+
+		<header>
+			<div class="banner">
+				<img src="img/pc1.jpg">
+			</div>
+			
+			
 		</header>
 	</div>
 	
@@ -53,15 +72,15 @@
 					
 
 					<div class="text">
-						<p>Hey! I'm Laura, a 15 y/o on a mission to impact billions. Passionate about helping humanity overcome extinction events, through entrepreneurship and emerging tech, specifically interested in space tech and the problem of electronic waste.</p>
+						<p>Hey! I'm Laura, a 15 y/o on a mission to impact billions. I'm passionate about helping humanity overcome extinction events, through entrepreneurship and emerging tech. I'm specifically interested in space tech (colonizing Mars!) and the problem of electronic waste.</p>
 
-						<p>Uploading videos on my <a href='https://www.youtube.com/channel/UCstSEHcCLMGdac9wkbMeAIw' target="_blank">youtube channel</a>.</p>
+						<p>I've recently started getting into filmmaking and animation, uploading videos on my <a href='https://www.youtube.com/channel/UCstSEHcCLMGdac9wkbMeAIw' target="_blank">youtube channel</a>.</p>
 
 						<p>This year, I'm starting as an innovator at <a href='https://tks.world' target="_blank">The Knowledge Society (TKS)</a>.</p>
 
-						<p>Working on writing articles</p>
+						<p>Working on writing articles on Medium.</p>
 
-						<p>TOPS program</p>
+						<!-- <p>TOPS program</p> -->
 
 					</div>
 				</div>
@@ -78,21 +97,23 @@
 					<hr>
 				</div>
 				<div class="grid">
-					<a href="https://youtu.be/qRP4feBQOLs" class="item">
+					<a href="https://youtu.be/qRP4feBQOLs" target="_blank" class="item">
 						<iframe class='youtube-video' src="https://www.youtube.com/embed/qRP4feBQOLs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<h3>The Flaws of First Past the Post</h3>
 						<p>Three-fourths of democracies around the world use a voting system that goes against the fundamental purpose of democracy—to represent the voice of its people.</p>
 					</a>
-					<div class="item">
-						<iframe class='youtube-video' src="https://www.youtube.com/embed/qRP4feBQOLs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<h3>The Flaws of First Past the Post</h3>
-						<p>The voting system used by the majority of democracies around the world seems very intuitive yet goes against the fundamentals of democracy.</p>
-					</div>
-					<div class="item">
-						<iframe class='youtube-video' src="https://www.youtube.com/embed/qRP4feBQOLs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<h3>The Flaws of First Past the Post</h3>
-						<p>The voting system used by the majority of democracies around the world seems very intuitive yet goes against the fundamentals of democracy.</p>
-					</div>
+					<a href="#" target="_blank" class="item">
+						<img src="img/coming-soon.png" alt="Coming soon!" class="youtube-video">
+						<h3>Gödel's First Theorem of Incompleteness</h3>
+						<p>Kurt Gödel set out to confirm his hero's idea that "Every mathematical problem should have a solution." Instead, he destroyed it.</p>
+						<aside>Sorry placeholder police</aside>
+					</a>
+					<a href="https://youtu.be/JNzKIkQPwss" target="_blank" class="item">
+						<iframe class="youtube-video" src="https://www.youtube.com/embed/JNzKIkQPwss" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<h3>Breakthrough Junior Challenge 2020</h3>
+						<p>Our 21st century sedentary lifestyles didn't just make heart disease the leading cause of death in the US. It has also caused our very brains to shrivel up from the inside out.</p>
+					</a>
+
 				</div>
 			</div>
 		</section>
@@ -105,11 +126,12 @@
 		<div class="container">
 			<h1>Laura Gao</h1>
 			<!-- <hr> -->
-			<div class='email'>
+			<!-- <div class='email'>
 				<a href="mailto:gaolauro@gmail.com"><i class="fas fa-envelope"></i>gaolauro@gmail.com</a>
-			</div>
+			</div> -->
 				
 			<div class="socials">
+				<a href="mailto:gaolauro@gmail.com"><i class="fas fa-envelope"></i></a>
 				<a href="https://www.youtube.com/channel/UCstSEHcCLMGdac9wkbMeAIw" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
 				<a href="https://www.linkedin.com/in/laurgao/" target="_blank"><i class="fab fa-linkedin"></i></a>
 				<a href="https://medium.com/@laurgao/" target="_blank"><i class="fab fa-medium"></i></a>
@@ -126,6 +148,11 @@
 	</footer>
 
 	</main>
+
+	<!-- All Script -->
+	<script src="js/plugins/jquery.min.js"></script>
+	<script src="js/plugins/jquery.animatedheadline.min.js"></script>
+
 
 </body>
 </html>
