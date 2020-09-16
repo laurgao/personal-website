@@ -1,0 +1,314 @@
+@font-face {
+	font-family: 'Nunito';
+	src: url(../fonts/Nunito-ExtraLight.ttf) format('truetype');
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url(../fonts/Nunito-Regular.ttf) format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url(../fonts/Nunito-Bold.ttf) format('truetype');
+	font-weight: 700;
+}
+
+body {
+	color: white;
+	font-family: "Nunito", sans-serif;
+	font-weight: 400; 
+}
+
+/* header */
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: white;
+}
+
+div.head {
+	z-index: 0;
+	/* background-image: url(..img/pfp.jpg); */
+	/* background-image: url(https://i.ibb.co/n7vRhRS/pc1.jpg);
+	/* background-size: 100% auto;
+	background-position: 0% 78%; /* 30% */
+}
+
+img.banner {
+	position: fixed;
+	left: 0;
+	z-index: -2;
+	height: auto;
+	min-height: 100%;
+	max-width: 100%;
+	top: -40%;
+}
+
+header:before {
+	content: '';
+	z-index: -1;
+	display: block;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+h1.title {
+	font-size: 5.75em;
+	margin-top: -0.2em;
+}
+
+header h3 {
+	margin-top: 15%;
+	font-size: 2.3em;
+}
+
+/* nav */ 
+
+nav {
+	position: fixed;
+	background-color: #ff974d; /* #BBB; */
+	z-index: 10;
+	text-align: right;
+	width: 100%;
+	padding: 0 5em; /* 0 1.5em; */
+	box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2), 0 2px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav img {
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 8em;
+	margin-top: 1.2em;
+}
+
+nav li {
+	display: inline-block;
+	padding: 1.5em 2em;
+	text-transform: uppercase;
+	font-size: 0.93em;
+	letter-spacing: 0.15em;
+}
+
+nav li a {
+	transition: color 250ms ease;
+}
+
+nav li a:hover {
+	color: #ff974d;
+}
+
+/* main */
+
+section {
+	width: 1519px;
+	padding-top: 3em;
+	padding-bottom: 1em;
+}
+
+.container {
+	width: 60%;
+	margin: auto;
+}
+
+.heading {
+	color: #ff974d;
+	margin-bottom: 1em;
+}
+
+.heading hr {
+	height: 0.15em;
+	background-color: #ff974d;
+}
+
+.heading h2 {
+	font-size: 1.75em;
+}
+
+main {
+	position: absolute;
+	top: 100%;
+	background-color: white;
+	z-index: 1;
+	width: 100%;
+}
+
+.blue {
+	background-color: rgb(30 ,32, 51);
+}
+
+.grey {
+	background-color: rgb(29, 28, 36);
+}
+
+section p {
+	margin-bottom: 1em;
+}
+
+/* section 1 - about */
+
+section#about {
+
+}
+
+.description {
+	/* width: 70%;
+	position: relative; sidebar */
+}
+
+
+img.pfp {
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+.img-crop {
+	border-radius: 50%;
+	width: 30%;
+	overflow: hidden;
+	position: relative;
+	float: right;
+	margin-left: 15px;
+}
+
+#about a {
+	color: #ff974d;
+	transition: all 250ms ease;
+}
+
+#about a:hover {
+	/* text-decoration: underline; */
+	color: #d65200;
+}
+
+/* socials sidebar */
+
+.sidebar {
+	color: #ff974d;
+	position: relative;
+	float: right;
+}
+
+.sidebar .fas, .sidebar .fab {
+	margin-right: 0.75em;
+}
+
+.sidebar p {
+	/* font-weight: 200; */	
+	font-size: 0.75em;
+	letter-spacing: 0.1em;
+}
+
+/* section 2 - portfolio */
+
+section#portfolio {
+
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2em;
+	grid-auto-flow: row;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.item {
+	background-color: #EEE;
+	box-shadow: 7px 7px 5px 0 rgba(255, 255, 255, 0.2), 0 2px 10px 0 rgba(255, 255, 255, 0.2);
+	/* box-shadow: 0 2px 10px 0 rgba(255, 255, 255, 0.2), 0 2px 10px 0 rgba(255, 255, 255, 0.19); */
+	border-radius: 10px;
+	color: #222;
+	padding: 20px;
+	transition: all 200ms ease-in-out;
+}
+
+.item a {
+	display: block;
+}
+
+.item:hover {
+	background-color: #DDD;
+	box-shadow: 7px 7px 5px 0 rgba(255, 255, 255, 0.1), 0 2px 10px 0 rgba(255, 255, 255, 0.1);
+	/* border: 7px grey solid; */
+}
+
+.item h3 {
+	margin-bottom: 0.5em;
+}
+
+.item p {
+	margin-bottom: 0;
+}
+
+.item .youtube-video {
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+/* footer - contact */
+
+footer {
+	padding: 4em 0;
+	text-align: center;
+}
+
+footer hr {
+	height: 0.15em;
+	background-color: white;
+	width: 50%;
+	margin: auto;
+	margin-top: -0.2em;
+}
+
+footer h1{
+}
+
+footer a {
+	transition: all 250ms ease; /* same as #about a */
+}
+
+footer a:hover {
+	color: #ff974d;
+}
+
+footer div.email {
+	font-size: 1em;
+}
+
+footer .fa-envelope {
+	padding-right: 0.25em;
+	font-size: 0.85em;
+}
+
+.socials .fas, .socials .fab {
+	margin: 1em;
+	border-radius: 50%;
+	font-size: 1em;
+}
+
+.socials {
+	margin: 1.5em;
+}
+
+.copyright {
+	margin: 0.5em;
+	font-size: 0.8em;
+	/* mayb uppercase and bold? nah */
+}
+
