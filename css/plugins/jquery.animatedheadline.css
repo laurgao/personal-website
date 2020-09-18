@@ -1,21 +1,6 @@
-/* .cd-headline {
-    font-size: 3rem;
-    line-height: 1.2;
-}
-@media only screen and (min-width: 768px) {
-    .cd-headline {
-        font-size: 4.4rem;
-        font-weight: 300;
-    }
-}
-@media only screen and (min-width: 1170px) {
-    .cd-headline {
-        font-size: 6rem;
-    }
-} */
-
 .cd-headline {
     font-weight: 300;
+    font-size: 2.3em;
 }
 
 .cd-words-wrapper {
