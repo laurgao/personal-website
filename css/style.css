@@ -87,10 +87,6 @@ header:before {
 	font-size: 2em;
 }
 
-.cd-headline {
-	font-size: 2.3em;
-}
-
 .title {
 	z-index: 2;
 	margin: 0;
@@ -273,7 +269,6 @@ img.pfp {
 /* Currently working on */
 
 .working-on .heading {
-	margin-top: 2em;
 	margin-bottom: 2em;
 }
 
