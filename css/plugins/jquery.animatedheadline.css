@@ -1,4 +1,4 @@
-.cd-headline {
+/* .cd-headline {
     font-size: 3rem;
     line-height: 1.2;
 }
@@ -12,6 +12,10 @@
     .cd-headline {
         font-size: 6rem;
     }
+} */
+
+.cd-headline {
+    font-weight: 300;
 }
 
 .cd-words-wrapper {
