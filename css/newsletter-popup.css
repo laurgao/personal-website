@@ -1,0 +1,22 @@
+section {
+	border-radius: 40px;
+	width: 70%;
+	margin: auto;
+	padding-bottom: 3em;
+	/* border: 7px solid black; */
+}
+
+.grey {
+	background-color: rgb(40, 40, 41);
+}
+
+div#mc_embed_signup {
+	width: 100%;
+	margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+	section {
+		width: 90%;
+	}
+}
