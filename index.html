@@ -2,14 +2,24 @@
 <html>
 <head>
 	<title>Laura Gao</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- no slash before local url -->
+
+	<!-- My css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+	<!-- Plug ins -->
 	<link rel="stylesheet" type="text/css" href="font-awesome/fontawesome-free-5.14.0-web/css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/plugins/jquery.animatedheadline.css">
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<link href="css/plugins/mailchimp-classic-10_7.css" rel="stylesheet" type="text/css">
 
+	<style type="text/css">
+		/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+		   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	</style>
 </head>
 <body>
-	
 	<div class="head">
 		<nav>
 			<a href="#"><img src="img/Laura-white.svg"></a>
@@ -25,12 +35,10 @@
 			<h1>Laura Gao</h1>
 			<p class="cd-headline rotate-1">
 				<span class="cd-words-wrapper">
-					<b class="is-visible"></b>
-					<b>Video Creator</b>
+					<b class="is-visible">Video Creator</b>
 					<b>Speedcuber</b>
 					<b>Math Nerd</b>
 					<b>Web Developer</b>
-					<b>Innovator</b>
 				</span>
 			</p>
 		</div>
@@ -39,54 +47,118 @@
 			<div class="banner">
 				<img src="img/pc1.jpg">
 			</div>
-			
-			
 		</header>
 	</div>
 	
-
 	<main>
 		<section class="grey" id="about">
+			<div class='container clearfix'> <!-- no more clearfix bc it makes overflow of the pop up hidden -->
+				<div class="clearfix">
+					<div class="side-bar">
+						<div class="img-crop">
+							<img src="img/pfp.jpg" class="pfp">
+						</div>
+						<!-- email and location -->
+						<div class="info-block">
+							<p><i class="fas fa-map-marked-alt" aria-hidden="false"></i>Toronto, Canada</p>
+							<p><a href="mailto:gaolauro@gmail.com"><i class="fas fa-envelope"></i>gaolauro@gmail.com</a></p>
+						</div>
+					</div>
+					<div class="heading">
+						<h2>About me</h2>
+						<hr>
+					</div>
 
+					<!--
+					<div class="sidebar">
+						<p><a href="mailto:gaolauro@gmail.com"><i class="fas fa-envelope"></i>gaolauro@gmail.com</a></p>
+						<p><a href="https://www.youtube.com/channel/UCstSEHcCLMGdac9wkbMeAIw"><i class="fab fa-youtube" aria-hidden="true"></i>Laura Gao</a></p>
+						<p></p>
+					</div>
+					-->
+					<div class="description">
+						<div class="text">
+							<p>Hey! I'm Laura, a 15 y/o on a journey to impact billions. I'm passionate about helping humanity overcome extinction events, through entrepreneurship and emerging tech. I'm specifically interested in space tech (colonizing Mars!) and the problem of electronic waste. My biggest ambitions are to go to space and to start a company with a mission like Elon Musk's.</p>
 
-			<div class='container'>
-				<div class="img-crop">
-					<img src="img/pfp.jpg" class="pfp">
-				</div>
-				<div class="heading">
-					<h2>About me</h2>
-					<hr>
-				</div>
+							<p>I've recently started getting into filmmaking and animation, uploading videos on <a href='https://www.youtube.com/channel/UCstSEHcCLMGdac9wkbMeAIw' target="_blank">YouTube</a>.</p>
 
-				<!--
-				<div class="sidebar">
-					<p><a href="mailto:gaolauro@gmail.com"><i class="fas fa-envelope"></i>gaolauro@gmail.com</a></p>
-					<p><a href="https://www.youtube.com/channel/UCstSEHcCLMGdac9wkbMeAIw"><i class="fab fa-youtube" aria-hidden="true"></i>Laura Gao</a></p>
-					<p></p>
-				</div>
-				-->
+							<p>This year, I'm starting as an innovator at <a href='https://tks.world' target="_blank">The Knowledge Society (TKS)</a>.</p>
 
-				
+							<p>Working on writing articles on Medium.</p>
 
-				<div class="description">
-					
+							<p>If you would like to come along for my journey, you can sign up for my <a href="" onclick="Calendly.initPopupWidget({url: 'newsletter.html'});return false;">newsletter</a>. It's gonna be a wild ride.</p>
 
-					<div class="text">
-						<p>Hey! I'm Laura, a 15 y/o on a mission to impact billions. I'm passionate about helping humanity overcome extinction events, through entrepreneurship and emerging tech. I'm specifically interested in space tech (colonizing Mars!) and the problem of electronic waste.</p>
-
-						<p>I've recently started getting into filmmaking and animation, uploading videos on my <a href='https://www.youtube.com/channel/UCstSEHcCLMGdac9wkbMeAIw' target="_blank">youtube channel</a>.</p>
-
-						<p>This year, I'm starting as an innovator at <a href='https://tks.world' target="_blank">The Knowledge Society (TKS)</a>.</p>
-
-						<p>Working on writing articles on Medium.</p>
-
-						<!-- <p>TOPS program</p> -->
-
+							<!-- <p>TOPS program</p> -->
+						</div>
 					</div>
 				</div>
-				
 
+				<div class="filler"></div>
+					
+				<div class="working-on">
+					<div class="heading">
+						<h4>My journey so far</h4>
+						<h3>I'm currently working on...</h3>
+						
+					</div>
+					<div class="img-crop">
+						<img src="img/cubehead.jpg">
+					</div>
+					<div class="grid">
+						<div class="item-container monkey">
+							<div class="item">
+								<a href="" onclick="Calendly.initPopupWidget({url: 'ml.html'});return false;"><h5>Judging #monkeyleague</h5></a>
+								<p>The <a href="https://lazer0monkey.com/" target="_blank">Monkey League</a> is a speedcubing competition that features world class cubers such as Tymon Kolasinski, Feliks Zemdegs, and Leo Borromeo. 8 competitors battle fiercly for a price pool of over $1000, and each match attracts thousands of viewers from all across the world. Hosted and organized by WCA World Championships finalist <a href="https://www.youtube.com/lazer0monkey" target="_blank">Phillip Lewicki</a>, the Monkey League is a huge step towards making cubing a well-recognized spectator sport.</p>
+							</div>
+						</div>
 
+						<div class="item-container tks">
+							<div class="item">
+								<a href=""onclick="Calendly.initPopupWidget({url: 'tks.html'});return false;"><h5>Innovating at TKS</h5></a>
+								<p><a href='https://tks.world' target="_blank">The Knowledge Society</a> is a human accelerator designed to teach teens the skills and mindsets required to solve the world's biggest problems by leveraging emerging tech. It is a network of the most ambitious teenagers from all across the world. At TKS, I will dive deep into next-generation technologies such as gene editing, AI, space tech, virtual reality, and quantum computing.</p>
+							</div>
+						</div>
+
+						<div class="item-container">
+							<div class="item">
+								<a href="" onclick="Calendly.initPopupWidget({url: 'tops.html'});return false;"><h5>TOPS Program @ MGCI</h5></a> 
+								<p>One of the <a href="https://topsprogram.ca" target="_blank">best</a> math + science programs in Canada.</p>
+							</div>
+						</div>
+						
+
+						<div class="item-container">
+							<div class="item">
+								<a href="" href="" onclick="Calendly.initPopupWidget({url: 'ap.html'});return false;"><h5>Self studying APs</h5></a>
+								<p>This year, I'm taking the AP Macroeconomics, AP World History, and AP Computer Science exams.</p>
+							</div>
+						</div>
+						
+
+						<div class="item-container">
+							<div class="item">
+								<a href="" onclick="Calendly.initPopupWidget({url: 'math.html'});return false;"><h5>Math</h5></a>
+								<p>Gotta get em AMC scores 👀</p>
+							</div>
+							
+						</div>
+
+						<div class="item-container code">
+							<div class="item">
+								<a href="" onclick="Calendly.initPopupWidget({url: 'code.html'});return false;"><h5>Learning to code</h5></a>
+								<p>Code is the language of the future. gotta jump on that train early. don't wanna get left behind. 3 weeks ago, I made a committment to spend 2 hours per day on learning to code. With little prior experience, I went through multiple online courses and took lots of notes. Finished HTML/CSS last week and finished python basics, and this website is my first legit code project :D Next step: learn how to use javascript with web dev + learn more advanced python. Which modules should I learn tho...</p>
+							</div>
+						</div>
+
+						<div class="item-container videos">
+							<div class="item">
+								<a href="" onclick="Calendly.initPopupWidget({url: 'videos.html'});return false;"><h5>Making videos</h5></a>
+								<p>I use Premiere Pro, After Effects, Photoshop, and Illustrator.</p>
+							</div>
+						</div>
+					
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -98,61 +170,98 @@
 				</div>
 				<div class="grid">
 					<a href="https://youtu.be/qRP4feBQOLs" target="_blank" class="item">
-						<iframe class='youtube-video' src="https://www.youtube.com/embed/qRP4feBQOLs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="sixteen-nine-container">
+							<iframe class='youtube-video' src="https://www.youtube.com/embed/qRP4feBQOLs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 						<h3>The Flaws of First Past the Post</h3>
 						<p>Three-fourths of democracies around the world use a voting system that goes against the fundamental purpose of democracy—to represent the voice of its people.</p>
 					</a>
-					<a href="#" target="_blank" class="item">
-						<img src="img/coming-soon.png" alt="Coming soon!" class="youtube-video">
+
+					<a href='' onclick="Calendly.initPopupWidget({url: 'img/coming-sept-19.png'});return false;" class="item">
+						<div class="sixteen-nine-container">
+							<img src="img/coming-sept-19.png" alt="Coming soon!" class="youtube-video">
+						</div>
 						<h3>Gödel's First Theorem of Incompleteness</h3>
 						<p>Kurt Gödel set out to confirm his hero's idea that "Every mathematical problem should have a solution." Instead, he destroyed it.</p>
 						<aside>Sorry placeholder police</aside>
 					</a>
 					<a href="https://youtu.be/JNzKIkQPwss" target="_blank" class="item">
-						<iframe class="youtube-video" src="https://www.youtube.com/embed/JNzKIkQPwss" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="sixteen-nine-container">
+							<iframe class="youtube-video" src="https://www.youtube.com/embed/JNzKIkQPwss" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 						<h3>Breakthrough Junior Challenge 2020</h3>
 						<p>Our 21st century sedentary lifestyles didn't just make heart disease the leading cause of death in the US. It has also caused our very brains to shrivel up from the inside out.</p>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="grey" id="contact">
+			<div class="container">
+				<div class="heading">
+					<h2>Contact</h2>
+					<hr>
+				</div>
+				<div class="contact-info grid">
+
+					<a href="mailto:gaolauro@gmail.com" class="item">
+						<div class="item email">
+							<div class="square">
+								<i class="fas fa-envelope" aria-hidden="true"></i>
+								<p>gaolauro@gmail.com</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="" onclick="Calendly.initPopupWidget({url: 'newsletter.html'});return false;" class="item">
+						<div class="item newsletter">
+							<div class="square">
+								<i class="fa fa-rocket" aria-hidden="true"></i>
+								<p>Newsletter</p>
+							</div>
+						</div>
+					</a>
+
+					<a href=""onclick="Calendly.initPopupWidget({url: 'https://calendly.com/lauragao/30min?primary_color=ff974d'});return false;" class="item calendly">
+						<div class="item">
+							<div class="square">
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+								<p>Schedule time<br>with me</p>
+							</div>
+						</div>
 					</a>
 
 				</div>
 			</div>
 		</section>
 
-	
 
-	
-
-	<footer class="grey" id="contact">
-		<div class="container">
-			<h1>Laura Gao</h1>
-			<!-- <hr> -->
-			<!-- <div class='email'>
-				<a href="mailto:gaolauro@gmail.com"><i class="fas fa-envelope"></i>gaolauro@gmail.com</a>
-			</div> -->
-				
-			<div class="socials">
-				<a href="mailto:gaolauro@gmail.com"><i class="fas fa-envelope"></i></a>
-				<a href="https://www.youtube.com/channel/UCstSEHcCLMGdac9wkbMeAIw" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-				<a href="https://www.linkedin.com/in/laurgao/" target="_blank"><i class="fab fa-linkedin"></i></a>
-				<a href="https://medium.com/@laurgao/" target="_blank"><i class="fab fa-medium"></i></a>
-				<a href="https://twitter.com/laurgao" target="_blank"><i class="fab fa-twitter"></i></a>
+		<footer class="blue">
+			<!-- <img src="img/sky.jpg"> footer shouldn't have bg image, solid black bg is the distinct look of professional footers -->
+			<div class="container">
+				<h1>Laura Gao</h1>
+				<!-- <hr> -->
+				<!-- <div class='email'>
+					<a href="mailto:gaolauro@gmail.com"><i class="fas fa-envelope"></i>gaolauro@gmail.com</a>
+				</div> -->
+					
+				<div class="socials">
+					<a href="mailto:gaolauro@gmail.com"><i class="fas fa-envelope"></i></a>
+					<a href="https://www.youtube.com/channel/UCstSEHcCLMGdac9wkbMeAIw" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+					<a href="https://www.linkedin.com/in/laurgao/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					<a href="https://medium.com/@laurgao/" target="_blank"><i class="fab fa-medium"></i></a>
+					<a href="https://twitter.com/laurgao" target="_blank"><i class="fab fa-twitter"></i></a>
+				</div>
+				<div class="copyright">
+					<p>&copy; Laura Gao 2020</p>
+				</div>
 			</div>
-			<div class="copyright">
-				<p>&copy; Laura Gao 2020. All Rights Reserved.</p>
-			</div>
-			
-			
-			
-		</div>
-		
-	</footer>
-
+		</footer>
 	</main>
 
-	<!-- All Script -->
+	<!-- Script -->
 	<script src="js/plugins/jquery.min.js"></script>
 	<script src="js/plugins/jquery.animatedheadline.min.js"></script>
-
-
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 </body>
 </html>
