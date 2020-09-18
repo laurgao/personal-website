@@ -684,9 +684,9 @@ footer .fa-envelope {
 		right: 30px;
 	}
 
-	#about .text p {
+	/* #about .text p {
 		text-align: justify;
-	}
+	} */
 
 	#about .description {
 		width: 90%;
@@ -700,6 +700,9 @@ footer .fa-envelope {
 
 	.heading hr {
 		width: 100%;
+	}
+	.heading h2 {
+		text-align: center;
 	}
 }
 
@@ -891,6 +894,7 @@ footer .fa-envelope {
 	.working-on .item-container:hover {
 		overflow: visible;
 		z-index: 3;
+		width: 100%;
 	} 
 
 	.working-on .monkey p {
@@ -932,7 +936,10 @@ footer .fa-envelope {
 	.working-on .item-container.monkey, .working-on .item-container.tops {
 		width: 208.383px;
 	}
-	.working-on .item-container.tks, .working-on .item-container.ap, .working-on .item-container.code, .working-on .item-container.videoss {
+	.working-on .item-container.tks, 
+	.working-on .item-container.ap, 
+	.working-on .item-container.code, 
+	.working-on .item-container.videos {
 		width: 167px;
 	}
 	.working-on .item-container.math {
