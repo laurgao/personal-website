@@ -58,7 +58,6 @@ div.banner {
 	min-height: 100%;
  	right: 0;
  	bottom: 0;
- 	width: 100%;
  	margin: 0;
 	top: 50%;
 	left: 50%;
@@ -156,7 +155,7 @@ section {
 .heading hr {
 	height: 0.20em;
 	background-color: #ff974d;
-	color: #ff974d;
+	color: black;
 }
 
 .heading h2 {
@@ -607,6 +606,12 @@ footer .fa-envelope {
 @media only screen and (max-width: 1080px) {
 	.container {
 		width: 70%;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.banner img {
+		width: 100%;
 	}
 }
 
