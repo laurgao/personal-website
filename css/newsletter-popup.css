@@ -6,6 +6,10 @@ section {
 	/* border: 7px solid black; */
 }
 
+a {
+	text-decoration: underline;
+}
+
 .grey {
 	background-color: rgb(40, 40, 41);
 }
