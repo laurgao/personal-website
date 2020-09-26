@@ -8,6 +8,11 @@ section {
 
 a {
 	text-decoration: underline;
+	transition: all 250ms;
+}
+
+a:hover {
+	color: #ff974d;
 }
 
 .grey {
