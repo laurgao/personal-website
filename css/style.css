@@ -162,14 +162,6 @@ section {
 	font-size: 1.75em;
 }
 
-main {
-	position: absolute;
-	top: 100%;
-	background-color: white;
-	z-index: 1;
-	width: 100%;
-}
-
 .blue {
 	background-color: rgb(30 ,32, 51);
 }
