@@ -5,3 +5,10 @@ main {
 	z-index: 1;
 	width: 100%;
 }
+
+footer {
+	padding: 4em 0;
+	text-align: center;
+	/* background-image: url(../img/sky.jpg);
+	background-size: 100% auto; */
+}
