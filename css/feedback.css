@@ -17,7 +17,7 @@ textarea {
 	width: 100%;
 }
 
-input {
+.name1 input {
 	display: block;
 	margin: auto;
 }
@@ -27,14 +27,14 @@ input #send {
 	background-color: #ff974d;
 }
 
-label {
+.options label {
 	font-size: 1.05em;
 }
 
 #title {
 	padding: 20px;
 	border: #d65200 dashed 10px;
-	margin: 5% 0 2% 0;
+	margin: 3em 0;
 }
 
 #title p {
@@ -54,6 +54,7 @@ footer .website {
 .options {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	margin: 1em 0;
 }
 
 .option {
@@ -72,6 +73,10 @@ footer .website {
 	display: none;
 }
 
+.option label {
+	cursor: pointer;
+}
+
 #or {
 	margin: 1.5em 0;
 }
@@ -79,6 +84,45 @@ footer .website {
 #send-custom-roasts {
 	margin-bottom: 1%;
 }
+
+/* name */
+section#name1 {
+	margin: 1em 0;
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+
+/* submit button */
+
+input[type=submit] {
+    padding: 10px 20px; 
+    margin: 10px 0;
+    background: #ff974d; 
+    border:0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    font-size: 1em;
+    color: white;
+    transition: all 250ms;
+}
+
+input[type=submit]:hover {
+	background-color: #888;
+}
+
+
+/* media queries */
 
 @media only screen and (min-width: 1200px) {
 	.options {
