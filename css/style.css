@@ -136,12 +136,6 @@ nav li a:hover {
 
 /* main */
 
-section {
-	width: 100%;
-	padding-top: 3em;
-	padding-bottom: 1em;
-}
-
 .container {
 	width: 60%;
 	margin: auto;
