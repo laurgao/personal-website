@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback form</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- no slash before local url -->
+
+	<!-- My css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/feedback.css">
+
+	<!-- Plug ins -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/fontawesome-free-5.14.0-web/css/all.css">
+</head>
+<body>
+
+	<main>
+		<div id="title">
+			<h1>✨👏😍ROAST✨😍ME👏😘✨</h1>
+			<p>Sept 2020 Newsletter Feedback Form</p>
+		</div>
+
+		<form action="https://formspree.io/f/xoqpjlyz" method="POST">
+
+			<section class="options">
+				<div class="option" id="mouse1">
+					<input type="radio" name="roast" value="your drawings look like they were done on ms paint with a 1980s ball mouse." id="mouse">
+					<label for="mouse" onclick="document.getElementById('mouse1').style.backgroundColor = '#ff974d'; document.getElementById('jokes1').style.backgroundColor = '#d65200'; document.getElementById('afternoon1').style.backgroundColor = '#d65200'; document.getElementById('mouse1').style.borderColor = 'black'; document.getElementById('jokes1').style.borderColor = 'white'; document.getElementById('afternoon1').style.borderColor = 'white'">your drawings look like they were done on ms paint with a 1980s ball mouse.</label>
+				</div>
+
+				<div class="option" id="jokes1">
+					<input type="radio" name="roast" value="when i saw your jokes i laughed... at how bad they are." id="jokes">
+					<label for="jokes" onclick="document.getElementById('jokes1').style.backgroundColor = '#ff974d'; document.getElementById('mouse1').style.backgroundColor = '#d65200'; document.getElementById('afternoon1').style.backgroundColor = '#d65200'; document.getElementById('jokes1').style.borderColor = 'black'; document.getElementById('mouse1').style.borderColor = 'white'; document.getElementById('afternoon1').style.borderColor = 'white'">when i saw your jokes i laughed... at how bad they are.</label>
+				</div>
+				
+				<div class="option" id="afternoon1">
+					<input type="radio" name="roast" value="you took an entire 6 days to finish a crappy website? i could've done it in an afternoon." id="afternoon">
+					<label for="afternoon" onclick="document.getElementById('afternoon1').style.backgroundColor = '#ff974d'; document.getElementById('jokes1').style.backgroundColor = '#d65200'; document.getElementById('mouse1').style.backgroundColor = '#d65200'; document.getElementById('afternoon1').style.borderColor = 'black'; document.getElementById('jokes1').style.borderColor = 'white'; document.getElementById('mouse1').style.borderColor = 'white'">you took an entire 6 days to finish a crappy website? i could've done it in an afternoon.</label>
+				</div>
+
+			</section>
+			<a href="#" id="clear-button">Clear</a>
+			<script type="text/javascript">
+				document.getElementById('clear-button').addEventListener('click', function () {
+					["mouse", "jokes", "afternoon"].forEach(function(id) {
+						document.getElementById(id).checked = false;
+						document.getElementById('afternoon1').style.backgroundColor = '#d65200';
+						document.getElementById('jokes1').style.backgroundColor = '#d65200';
+						document.getElementById('mouse1').style.backgroundColor = '#d65200';
+						document.getElementById('afternoon1').style.borderColor = 'white'; 
+						document.getElementById('jokes1').style.borderColor = 'white';
+						document.getElementById('mouse1').style.borderColor = 'white';
+
+				  });
+					return false;
+				})
+			</script>
+
+
+
+			<h3 id="or">- - - OR - - - </h3>
+			<h2 id="send-custom-roasts">Send your custom feedback!</h2>
+			<textarea name="custom-roast">Roast me as hard as you can</textarea>
+
+			<input type="submit" name="send" value="Send" id="send">
+
+		</form>
+	</main>
+
+	<footer>
+		<a href="https://lauragao.ca" target="_blank" class="website">Website✌</a>
+	</footer>
+
+	
+</body>
+</html>
