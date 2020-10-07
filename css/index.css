@@ -6,6 +6,12 @@ main {
 	width: 100%;
 }
 
+section {
+	width: 100%;
+	padding-top: 3em;
+	padding-bottom: 1em;
+}
+
 footer {
 	padding: 4em 0;
 	text-align: center;
