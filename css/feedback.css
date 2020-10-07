@@ -1,0 +1,99 @@
+body {
+	background-color: rgb(40, 40, 41);
+	transition: all 500ms;
+}
+
+main {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+textarea {
+	font-size: 1.25em;
+	height: 10em;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+}
+
+input {
+	display: block;
+	margin: auto;
+}
+
+input #send {
+	padding: 10px;
+	background-color: #ff974d;
+}
+
+label {
+	font-size: 1.05em;
+}
+
+#title {
+	padding: 20px;
+	border: #d65200 dashed 10px;
+	margin: 5% 0 2% 0;
+}
+
+#title p {
+	font-size: small;
+	margin-top: 2px;
+}
+
+footer .website {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	text-decoration: underline;
+}
+
+.options {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 3em;
+}
+
+.option {
+	background-color: #d65200;
+	border: 5px white solid;
+	border-radius: 30px;
+	padding: 10px;
+	transition: all 500ms;
+}
+
+.option:hover {
+	background-color: #ff974d;
+}
+
+.option input {
+	display: none;
+}
+
+#or {
+	margin: 1.5em 0;
+}
+
+#send-custom-roasts {
+	margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 900px) {
+	.options {
+		grid-template-columns: repeat(1, 1fr);
+		grid-row-gap: 1em;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#title p {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	main {
+		width: 80%;
+	}
+}
