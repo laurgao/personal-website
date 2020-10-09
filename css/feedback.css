@@ -27,7 +27,7 @@ main {
 
 #title a {
 	text-decoration: underline;
-	transform: all 250ms;
+	transition: all 250ms;
 }
 
 #title a:hover {
