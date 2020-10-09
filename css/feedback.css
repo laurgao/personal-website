@@ -1,3 +1,5 @@
+/* universal styles */
+
 body {
 	background-color: rgb(40, 40, 41);
 	transition: all 500ms;
@@ -9,27 +11,8 @@ main {
 	text-align: center;
 }
 
-textarea {
-	font-size: 1.25em;
-	height: 10em;
-	border-radius: 10px;
-	padding: 10px;
-	width: 100%;
-}
 
-.name1 input {
-	display: block;
-	margin: auto;
-}
-
-input #send {
-	padding: 10px;
-	background-color: #ff974d;
-}
-
-.options label {
-	font-size: 1.05em;
-}
+/* title */
 
 #title {
 	padding: 20px;
@@ -42,13 +25,20 @@ input #send {
 	margin-top: 2px;
 }
 
-footer .website {
-	position: relative;
-	float: right;
-	text-align: right;
+#title a {
 	text-decoration: underline;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	transform: all 250ms;
+}
+
+#title a:hover {
+	color: #ff974d;
+}
+
+
+/* roast options radio buttions */
+
+.options label {
+	font-size: 1.05em;
 }
 
 .options {
@@ -77,15 +67,28 @@ footer .website {
 	cursor: pointer;
 }
 
+
+/* custom roasts */
+
 #or {
-	margin: 1.5em 0;
+	margin: 2em 0;
 }
 
 #send-custom-roasts {
 	margin-bottom: 1%;
 }
 
+textarea {
+	font-size: 1.25em;
+	height: 10em;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+}
+
+
 /* name */
+
 section#name1 {
 	margin: 1em 0;
 }
@@ -119,6 +122,18 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	background-color: #888;
+}
+
+
+/* footer */
+
+footer .website {
+	position: relative;
+	float: right;
+	text-align: right;
+	text-decoration: underline;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 
